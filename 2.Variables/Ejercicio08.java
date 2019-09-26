@@ -1,12 +1,12 @@
 public class Ejercicio08 {
   public static void main(String[] args) {
-	char 11 = 'l';
-	char 12 = 'a';
-	char 13 = 't';
-	char 14 = 'a';
-	char 15 = 's';
+	char caracter1 = 'l';
+	char caracter2 = 'a';
+	char caracter3 = 't';
+	char caracter4 = 'a';
+	char caracter5 = 's';
 	
-	String palabra = "" + 1 + 2 + 3 + 4 + 5;
-	System.out.println(palabra);
+	String cadena = "" + caracter1 + caracter2 + caracter3 + caracter4 + caracter5;
+	System.out.println(cadena);
   }
 }
