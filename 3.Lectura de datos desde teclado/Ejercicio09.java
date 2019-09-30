@@ -13,7 +13,7 @@ public class Ejercicio09 {
 	
 	double VolumenCono;
 	double π = 3.14;
-	VolumenCono = ( (1/3)*π*r*r*h );
+	VolumenCono = (π*(r*r)*h)/3;
 	System.out.println("El volumen del cono es: " +VolumenCono+ "cm3");
 	}
 }
