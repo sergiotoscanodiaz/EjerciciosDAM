@@ -5,11 +5,12 @@ public class Ejercicio04 {
     int horas = Integer.parseInt(System.console().readLine());
     int sueldo;
     
-    if (horas < 40){
-      sueldo = 12 * horas;
+     if (horas < 40){
+     sueldo = 12 * horas;
+     System.out.println("El sueldo semanal es de " + sueldo + " euros");
      } else  {
 	 sueldo = (40 * 12) + ((horas - 40) * 16);
-	 System.out.println("El sueldo semanal que es de " + sueldo + " euros");
+	 System.out.println("El sueldo semanal es de " + sueldo + " euros");
   }
  }
 }
