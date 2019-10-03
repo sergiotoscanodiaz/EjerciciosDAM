@@ -1,4 +1,4 @@
-public class Ejercicio07 {
+public class Ejercicio08 {
   public static void main(String[] args) {
 
     System.out.print("Este programa calcula la media de tres notas. Por favor, introduzca la primera nota: ");
@@ -14,6 +14,22 @@ public class Ejercicio07 {
     
     System.out.println("Tu nota media es = " + media);
 	
-	}
-  }
+	if ((media >= 0) && (media <= 4)) {
+      System.out.println("Insuficiente");
+    }       
+    if (media == 5) {
+      System.out.println("Suficiente");
+    }      
+    if ((media >= 6) && (media <= 7)) {
+      System.out.println("Bien");
+    }
+	if (media == 8) {
+      System.out.println("Notable");
+    }
+    if ((media >= 9) && (media <= 10)) {
+      System.out.println("Sobresaliente");
+	
+	
+	  }
+   }
 }
