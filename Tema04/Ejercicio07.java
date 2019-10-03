@@ -15,5 +15,5 @@ public class Ejercicio07 {
     System.out.println("Tu nota media es = " + media);
 	
 	}
-  }
 }
+
