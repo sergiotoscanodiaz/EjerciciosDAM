@@ -27,9 +27,7 @@ public class Ejercicio08 {
       System.out.println("Notable");
     }
     if ((media >= 9) && (media <= 10)) {
-      System.out.println("Sobresaliente");
-	
-	
+      System.out.println("Sobresaliente");	
 	}
   }
 }
