@@ -9,7 +9,7 @@ public class Ejercicio06 {
 	if (h == 0) {
       System.out.println("El objeto no cae a ninguna altura.");
     } else {
-      System.out.println("El valor del tiempo es = " + Math.sqrt((2*h)/g));
+      System.out.println("El valor del tiempo es de = " + Math.sqrt((2*h)/g) + " segundos");
     }
   }
 }
