@@ -94,7 +94,7 @@ public class Ejercicio12 {
       puntos++;
     }
     
-	  System.out.println("Has obtenido " + puntos + " puntos.");       
-	 }
-   }
+	System.out.println("Has obtenido " + puntos + " puntos.");       
+	}
+}
  
