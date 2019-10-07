@@ -92,7 +92,7 @@ public class Ejercicio16 {
       puntos+=3;
     }
     
-    System.out.println("Has obtenido " + puntos + " puntos."); 
+    System.out.println("Has obtenido " + puntos + " puntos"); 
         
     if ( puntos <= 5 ) {
       System.out.print("¡Enhorabuena! tu pareja parece ser totalmente fiel.");
