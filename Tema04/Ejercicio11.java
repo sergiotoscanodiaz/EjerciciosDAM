@@ -11,7 +11,7 @@ public class Ejercicio11 {
     int segundosTranscurridos = (hora * 3600) + (minutos * 60);
     int segundosHastaMedianoche = (24 * 3600) - segundosTranscurridos;
     
-    System.out.printf("Hasta la medianoche faltan %d segundos", hora, minutos, segundosHastaMedianoche);
+    System.out.printf("Hasta la medianoche faltan %d segundos", segundosHastaMedianoche);
     
     
   }
