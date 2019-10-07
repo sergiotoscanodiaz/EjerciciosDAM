@@ -12,7 +12,7 @@ public class Ejercicio12 {
     respuesta = System.console().readLine();
     if (respuesta.equals("c")) {
       puntos++;
-      
+    }  
     
     System.out.println("2.¿Cuál es el lenguaje de programación que está ganando popularidad últimamente? ");
     System.out.println("a) C++ b) Python c) Java");
@@ -97,4 +97,4 @@ public class Ejercicio12 {
 	  System.out.println("Has obtenido " + puntos + " puntos.");       
 	 }
    }
- }
+ 
