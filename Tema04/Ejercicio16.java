@@ -36,14 +36,14 @@ public class Ejercicio16 {
     respuesta = System.console().readLine();
     if (respuesta.equals("v")) {
       puntos+=3;
-    
+    }
     System.out.println("5. No te deja que mires la agenda de su teléfono móvil");
     System.out.println("v) f)");
     System.out.print("Escribe la respuesta: ");
     respuesta = System.console().readLine();
     if (respuesta.equals("v")) {
       puntos+=3;
-      
+    }  
     System.out.println("6. Tu pareja parece estar más inquieta de lo normal sin ningún motivo aparente.");
     System.out.println("v) f)");
     System.out.print("Escribe la respuesta: ");
@@ -107,5 +107,4 @@ public class Ejercicio16 {
 	}
    }
   }
- }
-}
+
