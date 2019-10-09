@@ -5,10 +5,10 @@ public class Ejercicio03 {
 	int i = 0;
 	
 	  do{
-      System.out.println(i);
-      i = i + 5;
+        System.out.println(i);
+        i = i + 5;
 	  } 
-	   while (i <=100);
+	    while (i <=100);
 	   	    
   } 
 }
