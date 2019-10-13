@@ -9,7 +9,7 @@ public class Ejercicio19 {
     String relleno = System.console().readLine();
     
     int planta = 1;
-    int longitudDeLinea = 1;
+    int longitud = 1;
     int espacios = altura-1;
     
     while (planta <= altura) {
@@ -18,13 +18,13 @@ public class Ejercicio19 {
         System.out.println(" ");
       }
     
-      for (int i = 1; i <= longitudDeLinea; i++) {
+      for (int i = 1; i <= longitud; i++) {
         System.out.print(relleno);
       }
 
       planta++;
       espacios--;
-      longitudDeLinea += 2;
+      longitud += 2;
     }
   }
 }
