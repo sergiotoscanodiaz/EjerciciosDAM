@@ -4,7 +4,6 @@ public class Ejercicio09 {
    
     int numeroDeDigitos = 1;
    
-
     System.out.print("Introduzca un número entero y verás cuántos dígitos tiene: ");
     int num = Integer.parseInt(System.console().readLine());
     
