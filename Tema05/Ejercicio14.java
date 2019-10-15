@@ -3,7 +3,7 @@ public class Ejercicio14 {
   public static void main(String[] args) {
 
    System.out.println("Cálculo de una potencia");
-    
+  
     System.out.print("Introduzca la base: ");
     int base = Integer.parseInt(System.console().readLine());
     
@@ -18,7 +18,7 @@ public class Ejercicio14 {
     
     if (exponente > 0) {
       for (int i = 0; i < exponente; i++) {
-        potencia *= base;
+        potencia = potencia * base;
       }
     }
 

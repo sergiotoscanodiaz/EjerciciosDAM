@@ -12,7 +12,6 @@ public class Ejercicio07 {
        
           if(i == 2407){
             System.out.println("La caja fuerte se ha abierto satisfactoriamente");
-            break;
        
           } else {
 		    System.out.println("Lo siento, esa no es la combinación. ¡Prueba otra vez!");
