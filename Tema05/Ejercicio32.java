@@ -4,28 +4,15 @@ public class Ejercicio32 {
         
     int numeroIntroducido = 0;
     int sumaNumPar = 0;
-    int par = 0;
+    int digitosPares = 0;
 
-    System.out.println("Este programa ,dado un número entero positivo, muestra cuáles son y cuánto suman los dígitos pares..");
+    System.out.println("Este programa ,dado un número entero positivo, muestra cuáles son y cuánto suman los dígitos pares: ");
   
 
-    while (numeroIntroducido >= 0) {
-      numeroIntroducido = Integer.parseInt(System.console().readLine());
-      
-     
-		  if((numeroIntroducido % 2) == 0) {
-			  sumImp += numeroIntroducido;
-			  numeroNumImp++;
-		  } else {
-			  if (numeroIntroducido > par)
-			    par = numeroIntroducido;			  
-          }
-	  }
-  }
-    
-    System.out.println("El usuario ha introducido " + numeros + " numeros");
-    System.out.println("La media de los impares es " +sumImp / numeroNumImp);
-    System.out.println("El numero par máximo es el " + par);
+
+    System.out.println("El usuario ha introducido " + numeroIntroducido );
+    System.out.println("Los dígitos pares del número introducido es: " +digitosPares);
+    System.out.println("La suma entre los dígitos pares es: " + sumaNumPar);
   }
 }
     
