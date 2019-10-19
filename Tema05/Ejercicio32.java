@@ -1,24 +1,43 @@
 public class Ejercicio32 {
 
   public static void main(String[] args) {
-        
-    int numeroIntroducido = 0;
-    int sumaNumPar = 0;
-    int digitosPares = 0;
+    
+    System.out.print("Por favor, introduzca un número entero positivo: ");
+    long numero = Long.parseLong(System.console().readLine());
 
-    System.out.println("Este programa ,dado un número entero positivo, muestra cuáles son y cuánto suman los dígitos pares: ");
-  
+    long reves = 0;
+    int longitud = 0;
+    
+    if (numero == 0) {
+      longitud = 1;
+    }
+    
+    while (numero > 0) {
+      reves = (reves * 10) + (numero % 10);
+      numero /= 10;
+      longitud++;
+    } 
+    
+    System.out.print("Dígitos pares: ");
 
+    int digito;
+    int sumaPares = 0;
+    
+    for (int i = 0; i < longitud; i++) {
 
-    System.out.println("El usuario ha introducido " + numeroIntroducido );
-    System.out.println("Los dígitos pares del número introducido es: " +digitosPares);
-    System.out.println("La suma entre los dígitos pares es: " + sumaNumPar);
+      digito = (int)(reves % 10);
+
+      if ((digito % 2) == 0) {
+        System.out.print(digito + " ");
+        sumaPares += digito;
+      }
+
+     reves /= 10;
+    }
+    
+    System.out.println("Suma de los dígitos pares: " + sumaPares);
   }
 }
-    
- 
-
-
 
 
 
