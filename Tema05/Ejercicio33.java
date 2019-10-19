@@ -7,12 +7,18 @@ public class Ejercicio33 {
     
 
     for (int i = 1; i < altura; i++) {
+      System.out.print("* ");
+      for (int j = 2; j < altura; j++) {
+        System.out.print("  ");
+      }
       System.out.println("*");
     }
 
-    
+    System.out.print("  ");
+    for (int i = 2; i < altura; i++) {
+      System.out.print("* ");
+    }
 
   }
 }
-    
  
