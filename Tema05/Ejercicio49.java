@@ -29,8 +29,7 @@ public class Ejercicio49 {
     
     System.out.println("Ha introducido " + contador + " números no primos.");
     System.out.println("Media: " + (double)suma / contador);
-
-
+    
   }
 }
 
