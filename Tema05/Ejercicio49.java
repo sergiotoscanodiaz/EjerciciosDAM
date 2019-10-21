@@ -7,8 +7,6 @@ public class Ejercicio49 {
     int numero;
     int suma = 0;
     int contador = 0;
-    int maximo;
-    int minimo;
     boolean esPrimo;
 
     do {
@@ -24,16 +22,14 @@ public class Ejercicio49 {
       if (!esPrimo) {
         suma += numero;
         contador++;
-        
-        maximo = numero > maximo ? numero : maximo;
-        minimo = numero < minimo ? numero : minimo;
+
       }
       
     } while (!esPrimo);
     
     System.out.println("Ha introducido " + contador + " números no primos.");
-    System.out.println("Máximo: " + maximo);
-    System.out.println("Mínimo: " + minimo);
+    //System.out.println("Máximo: " + maximo);
+    //System.out.println("Mínimo: " + minimo);
     System.out.println("Media: " + (double)suma / contador);
 
 
