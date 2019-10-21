@@ -12,10 +12,11 @@ public class Ejercicio55 {
       longitud++;
     }
     
-    int primero =  (int)(numeroIntroducido / Math.pow(10, longitud - 1));
-    long aux = (long)(primero * Math.pow(10, longitud - 1));
-    long resultado = (numeroIntroducido - aux) * 10 + primero;
+    int ultimo = (int) (numeroIntroducido % 10);
+    long aux = numeroIntroducido / 10;
+    long resultado = ultimo * (long) Math.pow(10, longitud - 1) + aux;
     System.out.println("El número resultado es " + resultado);
+    
   }  
 }
 
