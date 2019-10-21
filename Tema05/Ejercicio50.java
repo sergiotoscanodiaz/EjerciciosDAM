@@ -62,8 +62,8 @@ public class Ejercicio50 {
       System.out.print(" ");
     }
     System.out.println("****");
-    
-    
+
+
   }
 }
     
