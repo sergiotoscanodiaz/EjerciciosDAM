@@ -9,7 +9,6 @@ public class Ejercicio49 {
     int contador = 0;
     boolean esPrimo;
     
-
     do {
       numero = Integer.parseInt(System.console().readLine());
 
