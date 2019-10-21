@@ -8,6 +8,7 @@ public class Ejercicio49 {
     int suma = 0;
     int contador = 0;
     boolean esPrimo;
+    
 
     do {
       numero = Integer.parseInt(System.console().readLine());
@@ -28,8 +29,6 @@ public class Ejercicio49 {
     } while (!esPrimo);
     
     System.out.println("Ha introducido " + contador + " números no primos.");
-    //System.out.println("Máximo: " + maximo);
-    //System.out.println("Mínimo: " + minimo);
     System.out.println("Media: " + (double)suma / contador);
 
 
