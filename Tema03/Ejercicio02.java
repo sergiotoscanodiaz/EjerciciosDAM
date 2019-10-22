@@ -6,10 +6,10 @@ public class Ejercicio02 {
 	linea = System.console().readLine();
 
 	  int numero1;
-	Numero1 = Integer.parseInt( linea );
+	numero1 = Integer.parseInt( linea );
 	
     int total;
 	total = (numero1*166);
-	System.out.printf(Numero1+" euros son " + total + " pesetas ");
+	System.out.printf(numero1+" euros son " + total + " pesetas ");
 	}
 }

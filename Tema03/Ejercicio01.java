@@ -6,12 +6,12 @@ public class Ejercicio01 {
 	linea = System.console().readLine();
 	
     int numero1;
-	Numero1 = Integer.parseInt( linea );
+	numero1 = Integer.parseInt( linea );
 	System.out.print("introduce otro, por favor: ");
 	linea = System.console().readLine();
 	
     int numero2;
-	Numero2 = Integer.parseInt( linea );
+	numero2 = Integer.parseInt( linea );
 
 	  int total;
 	total = (numero1 * numero2);
