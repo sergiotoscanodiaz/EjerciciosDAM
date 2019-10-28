@@ -3,9 +3,7 @@ public class Ejercicio02 {
   public static void main(String[] args) {
     
     System.out.println("Este es un programa  que muestra al azar el nombre de una carta de la baraja francesa: ");
-      
-      int suma = 0;  
-         
+               
         for (int i = 1; i <= 1; i++) {
           int baraja = ((int)(Math.random()*4) + 1);    
           
