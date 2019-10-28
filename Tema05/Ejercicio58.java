@@ -10,8 +10,10 @@ public class Ejercicio58 {
     
     while (numeroIntroducido > 0) {
       suma += numeroIntroducido % 10;
+      System.out.println(suma);
       numeroIntroducido /= 10;
       longitud++;
+      System.out.println(longitud);
     }
 
     System.out.println("La media de sus dígitos es " + (double)suma / longitud);
