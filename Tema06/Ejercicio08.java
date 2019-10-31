@@ -20,11 +20,11 @@ public class Ejercicio08 {
           case 1:
           case 2:
           case 3:
-            System.out.print("1  |");
+            System.out.print(" 1 |");
             break;
           case 4:
           case 5:
-            System.out.print("  2|");
+            System.out.print(" 2 |");
             break;
           case 6:
             System.out.print(" X |");
