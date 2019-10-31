@@ -8,7 +8,7 @@ public class Ejercicio07 {
     int columnas = 3;
     
     for (int fila = 1; fila <= 15; fila++) {
-      System.out.printf("%4d. |", fila);
+      System.out.printf(" |", fila);
       
       if (fila == 15) {
         columnas = 1;
