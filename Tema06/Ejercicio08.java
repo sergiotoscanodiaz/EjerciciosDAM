@@ -15,15 +15,18 @@ public class Ejercicio08 {
       }
       
       for (int apuesta = 1; apuesta <= columnas; apuesta++) {
-        quiniela = (int)(Math.random() * 3) + 1;
+        quiniela = (int)(Math.random() * 6) + 1;
         switch(quiniela) {
           case 1:
+          case 2:
+          case 3:
             System.out.print("1  |");
             break;
-          case 2:
+          case 4:
+          case 5:
             System.out.print("  2|");
             break;
-          case 3:
+          case 6:
             System.out.print(" X |");
           default:
         }
