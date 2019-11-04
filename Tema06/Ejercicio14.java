@@ -6,16 +6,12 @@ public class Ejercicio14 {
     
     String numeroIntroducido;
     int numero = ((int)(Math.random()*101));
+    System.out.println("¿Es este el número que has pensado? s/n " +numero);
+    String respuesta = System.console().readLine();
     
-      for (int i = 1; i <= 5; i++) {
-        numeroIntroducido = System.console().readLine();
-        int n = Integer.parseInt(numeroIntroducido);  
-        
-        if (n == numero){
-          System.out.println("¡Has acertado!");
-        }else{
-          System.out.println("¡Inténtalo otra vez!");                
-        }
-      } 
+    if (respuesta.equals("s"));
+      System.out.println("¡Perfecto!");
+    
+       
   }
 }
