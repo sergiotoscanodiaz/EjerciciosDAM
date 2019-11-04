@@ -2,19 +2,36 @@ public class Ejercicio14 {
 
   public static void main(String[] args) {
     
-    System.out.println("Este es un programa que piensa un número al azar entre 0 y 100. Introduzca un número: ");
-    
-    String respuesta;
-    
-    for (int i=1; i<=5; i++){
-    int numero = ((int)(Math.random()*100)+1);
-    System.out.println("¿Es este el número que has pensado? s/n " +numero);
-    respuesta = System.console().readLine();
-    
-      if(respuesta.equals("s")){
-        System.out.println("¡Eres un máquina!");
+    int oportunidades = 5;
+    int numeroPensado;
+    int min = 0;
+    int max = 100;
+    boolean acertado = false;
+        
+    System.out.println("Piensa un número del 0 al 100");
+
+    do {
+      numeroPensado = (int)(Math.random() * (max - min) + min);
+      System.out.println("¿Es el " + numeroPensado + "?");
+      System.out.print("El número que estás pensando es M) mayor m) menor i) igual: ");
+      String respuesta = System.console().readLine();
+      oportunidades--;
+
+      if ( (respuesta.equals("M")) && (oportunidades > 0) )
+        min = numeroPensado + 1;
+      
+      if ( (respuesta.equals("m")) && (oportunidades > 0) )
+        max = numeroPensado - 1;
+      
+      if (respuesta.equals("i")) {
+        acertado = true;
+        System.out.println("¡Perfecto! ¡Qué feliz estoy!");
       }
+    } while(!acertado && (oportunidades > 0));
+    
+    if (!acertado) {
+      System.out.println("¡Piensa en un número más fácil la próxima vez!");
     }
-  }    
+  }
 }
 
