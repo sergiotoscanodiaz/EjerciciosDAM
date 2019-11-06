@@ -11,13 +11,13 @@ public class Ejercicio20 {
       if (i < (capacidad - litros)) {
         System.out.println("*    *");
       } else {
-        System.out.println("*$$$$*");
+        System.out.println("*xxxx*");
       }
     }
         
     System.out.println("******"); 
-    System.out.print("La cuba tiene una capacidad de " + capacidad);
-    System.out.print(" litros y contiene " + litros + " litros de agua.");
+    System.out.print("La cuba tiene una capacidad de " + capacidad + " litros y contiene " + litros + " litros de agua.");
+    
   }
 }
 
