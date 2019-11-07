@@ -14,9 +14,9 @@ public class Ejercicio04 {
       int[] cub = new int[20];
             
       for (int i = 0; i < 20; i++) {
-        num[i] =(int) (Math.random() * 101);
+        num[i] = (int)(Math.random() * 101);
         cua[i] = num[i]*num[i];
-        cub[i] = cua[i]*num[i];
+        cub[i] = num[i]*num[i]*num[i];
       }
       
       for (int i = 0; i < 20; i++) {
