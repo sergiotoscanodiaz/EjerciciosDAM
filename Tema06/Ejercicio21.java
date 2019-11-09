@@ -6,6 +6,7 @@ public class Ejercicio21 {
     int moneda1 = 0;
     int moneda2 = 0;
     int moneda3 = 0;
+    String posicion = "";
     
     for(int i = 1; i <=3; i++){
     int moneda = (int)(Math.random()*5);
@@ -37,6 +38,16 @@ public class Ejercicio21 {
         break;
       default:
     }
+     switch((int)(Math.random() * 2)) {
+        case 0:
+          posicion = "cara";
+          break;
+        case 1:
+          posicion = "cruz";
+          break;
+        default:
+      }
+      System.out.println(moneda + " - " + posicion);
     }
   }
 }
