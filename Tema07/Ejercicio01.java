@@ -12,7 +12,9 @@ public class Ejercicio01 {
       num[9] = 120;
             
       for (int i = 0; i < 12; i++) {
-        System.out.printf("num[%d]: %d\n", i, num[i]);
+        
+           System.out.printf("num[%d]: %d\n", i, num[i]);
+           
       }
   }
 }

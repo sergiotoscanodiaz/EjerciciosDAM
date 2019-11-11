@@ -6,12 +6,38 @@ public class Ejercicio05 {
 
   public static void main(String[] args) {
     
-    System.out.println("Teclea 10 números por teclado pulsando ENTER: ");
-    int[] n = new int[10];
+    int[] numero = new int[10];
+    int maximo = Integer.MIN_VALUE;
+    int minimo = Integer.MAX_VALUE;
+    int i;
     
-    for (int i = 0; i < 10; i++) {
-      n[i] = Integer.parseInt(System.console().readLine());
-    }
+    System.out.println("Introduzca números enteros y ve pulsando INTRO:");
+    
+    for (i = 0; i < 10; i++) {
+      numero[i] = Integer.parseInt(System.console().readLine());
       
+      if (numero[i] < minimo) {
+        minimo = numero[i];
+      }
+      
+      if (numero[i] > maximo)  {
+        maximo = numero[i];
+      }
+    }
+    
+    System.out.println();
+      
+    for (i = 0; i < 10; i++) {
+      System.out.print(numero[i]);
+      if (numero[i] == maximo) {
+        System.out.print(" máximo");
+      }
+      
+      if (numero[i] == minimo) {
+        System.out.print(" mínimo");
+      }
+      System.out.println();
+    }
   }
 }
+
