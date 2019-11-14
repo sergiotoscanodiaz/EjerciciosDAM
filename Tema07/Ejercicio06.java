@@ -15,7 +15,7 @@ public class Ejercicio06 {
       
       System.out.println("Array original:");
       for (i = 0; i < 15; i++) {
-        System.out.printf("|%3d ", i);
+        System.out.printf("|%1d ", i);
       }
       System.out.println("|");
       for (i = 0; i < 75; i++) {
