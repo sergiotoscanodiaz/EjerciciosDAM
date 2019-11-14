@@ -14,7 +14,7 @@ public class Ejercicio10 {
     int pares = 0;
     int impares = 0;
     
-    System.out.println("Este programa genera 20 números enteros aleatorios entre 0 y 100. El programa es capaz de pasar todos los números pares a las primeras posiciones del array (del 0 en adelante) y todos los números impares a las celdas restantes.: ");
+    System.out.println("Este programa genera 20 números enteros aleatorios entre 0 y 100. El programa es capaz de pasar todos los números pares a las primeras posiciones del array (del 0 en adelante) y todos los números impares a las celdas restantes: ");
 
     for (int i = 0; i < 20; i++) {
       numero[i] = (int)(Math.random() * 101);
@@ -49,6 +49,7 @@ public class Ejercicio10 {
     
     for (int i = 0; i < 20; i++) {
       System.out.print(impar[i] + " ");  
+      
     }
   }
 }
