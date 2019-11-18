@@ -43,10 +43,11 @@ public class Ejercicio14 {
     System.out.println();
 
     for (String p : palabra) {
-      System.out.printf("│%-2s", p);
+      System.out.printf("│%-4s", p);
     }
     System.out.println();
-
+    System.out.println();
+    
     System.out.println("Array resultado:");
     System.out.println();
     for (int i = 0; i < 8; i++) {
@@ -55,7 +56,7 @@ public class Ejercicio14 {
     System.out.println();
 
     for (String r : resultado) {
-      System.out.printf("│%-2s", r);
+      System.out.printf("│%-4s", r);
     }
     System.out.println();
   }
