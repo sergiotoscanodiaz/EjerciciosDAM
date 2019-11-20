@@ -15,7 +15,7 @@ public class BuscaTesoro {
     int tesoroX = (int)(Math.random() * 5);
     int tesoroY = (int)(Math.random() * 4);
     
-    //Pinta el mapa
+    //Pinta el mapa que contiene un tesoro
     System.out.print("Y");
     for(y = 3; y > -1; y--) {
       System.out.println();
