@@ -6,9 +6,8 @@ public class BuscaTesoro {
     int[][] mapa = new int[5][4];
     int x;
     int y;
-    mapa[1][0] = 75;
-    
-    for(x = 0; x < 4; x++) {
+        
+    for(x = 3; x > -1; x--) {
       System.out.println();
       System.out.print(x + "|");
     }
@@ -20,6 +19,13 @@ public class BuscaTesoro {
       System.out.print("  "+ y);
     }
     
+    System.out.println(" ");
+    System.out.println("Escriba las coordenadas para buscar el tesoro.");
+    System.out.print("Coordenada x: ");
+    x = Integer.parseInt(System.console().readLine());
+    System.out.print("Coordenada y: ");
+    y = Integer.parseInt(System.console().readLine());
+
     
 
   }
