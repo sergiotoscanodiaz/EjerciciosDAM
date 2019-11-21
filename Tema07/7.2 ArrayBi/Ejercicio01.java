@@ -15,7 +15,7 @@ public class Ejercicio01 {
     int fila;
     int columna;
 
-    System.out.print("       ");
+    System.out.print("      ");
     for(columna = 0; columna < 6; columna++) {
       System.out.print("   Columna " + columna);
     }
