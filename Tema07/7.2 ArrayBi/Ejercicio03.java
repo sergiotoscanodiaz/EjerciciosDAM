@@ -10,8 +10,7 @@ public class Ejercicio03 {
     System.out.println("Por favor, introduzca los números (enteros) en el array");
     for(fila = 0; fila < 4; fila++) {
       for(columna = 0; columna < 5; columna++) {
-        System.out.print("Fila " + fila + ", columna " + columna + ": ");
-        num[fila][columna] = Integer.parseInt(System.console().readLine());
+        num[fila][columna] = (int)(Math.random() * 900) + 100;
       }
     }
 
