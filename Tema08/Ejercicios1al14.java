@@ -29,7 +29,10 @@ public class Ejercicios1al14 {
     //7.digitoN
      System.out.println("En la posición 2 del 3452 está el " + matematicas.VariasFunciones.digitoN(3452, 2));
      
-    //8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
-     System.out.println("En el 78604321, el dígito 0 está en la posición " + matematicas.VariasFunciones.posicionDigito(78604321, 0));
+    //8.posicionDeDigito
+    System.out.println("En el 78604321, el dígito 0 está en la posición " + matematicas.VariasFunciones.posicionDigito(78604321, 0));
+     
+    //9.quitaPorDetras 
+    System.out.println("Si al 78604321 se le quitan por detrás 7 dígitos, se queda como " + matematicas.VariasFunciones.quitaPorDetras(78604321, 7));
   }
 }

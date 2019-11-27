@@ -111,6 +111,7 @@ public class VariasFunciones {
   public static int digitoN(int x, int n) {
     return digitoN((long)x, n);
   }
+  
   //8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
   public static int posicionDigito(long x, int d) {
     int i;
@@ -123,6 +124,16 @@ public class VariasFunciones {
       return i;
     }
   }
+  
+  //9. quitaPorDetras: Le quita a un número n dígitos por detrás (por la derecha).
+  public static long quitaPorDetras(long x, int n) {
+    return x / (long)potencia(10, n);
+  }
 
+  public static int quitaPorDetras(int x, int n) {
+
+    return (int)quitaPorDetras((long) x, n);
+  }
+  
 
 }
