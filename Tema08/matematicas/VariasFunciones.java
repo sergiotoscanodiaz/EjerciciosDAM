@@ -110,8 +110,19 @@ public class VariasFunciones {
 
   public static int digitoN(int x, int n) {
     return digitoN((long)x, n);
-  
-  //8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
-  
   }
+  //8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
+  public static int posicionDigito(long x, int d) {
+    int i;
+
+    for (i = 1; (i < digitos(x)) && (digitoN(x, i) != d); i++) {};
+
+    if (i == digitos(x)) {
+      return -1;
+    } else {
+      return i;
+    }
+  }
+
+
 }

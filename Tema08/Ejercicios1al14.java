@@ -21,12 +21,15 @@ public class Ejercicios1al14 {
     System.out.println("2^-10 = " + matematicas.VariasFunciones.potencia(2, -10));
     
     //5.digitos
-    System.out.println("El número 999999 tiene " + matematicas.VariasFunciones.digitos(999999) + " dígito/s.");
+    System.out.println("El número 9999 tiene " + matematicas.VariasFunciones.digitos(9999) + " dígito/s.");
     
     //6.voltea
      System.out.println("El 56 volteado es " + matematicas.VariasFunciones.voltea(56));
     
     //7.digitoN
      System.out.println("En la posición 2 del 3452 está el " + matematicas.VariasFunciones.digitoN(3452, 2));
+     
+    //8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
+     System.out.println("En el 78604321, el dígito 0 está en la posición " + matematicas.VariasFunciones.posicionDigito(78604321, 0));
   }
 }
