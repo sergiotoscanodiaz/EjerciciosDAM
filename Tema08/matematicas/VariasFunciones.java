@@ -36,7 +36,48 @@ public class VariasFunciones {
     return x;
   }
   
-  //6.Voltea: Le da la vuelta a un número.  
+  //4.potencia: Dada una base y un exponente devuelve la potencia.
+  public static double potencia(int base, int exponente) {
+    if (exponente == 0) {
+      return 1;
+    }
+
+    if (exponente < 0) {
+      return 1/potencia(base, -exponente);
+    }
+
+    int n = 1;
+
+    for (int i = 0; i < Math.abs(exponente); i++) {
+      n = n * base;
+    }
+
+    return n;
+  }
+  
+  //5.digitos: Cuenta el número de dígitos de un número entero.
+  public static int digitos(long x) {
+    if (x < 0) {
+      x = -x;
+    }
+
+    if (x == 0) {
+      return 1;
+    } else {
+      int n = 0;
+      while (x > 0) {
+        x = x / 10; // se le quita un dígito a x
+        n++; // incrementa la cuenta de dígitos
+      }
+      return n;
+    }
+  }
+
+  public static int digitos(int x) {
+    return digitos((long)x);
+  }
+
+  //6.voltea: Le da la vuelta a un número.  
   public static long voltea(long x) {
     if (x < 0) {
       return -voltea(-x);
@@ -55,5 +96,18 @@ public class VariasFunciones {
     public static int voltea(int x) {
     return (int)voltea((long)x);
   }
-  
+  //7. digitoN: Devuelve el dígito que está en la posición n de un número entero. Se empieza contando por el 0 y de izquierda a derecha
+  public static int digitoN(long x, int n) {
+    x = voltea(x);
+
+    while (n-- > 0) {
+      x = x / 10;
+    }
+
+    return (int)x % 10;
+  }
+
+  public static int digitoN(int x, int n) {
+    return digitoN((long)x, n);
+  }
 }
