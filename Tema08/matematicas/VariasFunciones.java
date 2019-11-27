@@ -2,7 +2,7 @@ package matematicas;
 
 public class VariasFunciones {
 
-  /*// esCapicua 
+  //1.esCapicua 
  
   public static boolean esCapicua(int n) {
     return n == voltea(n);
@@ -10,9 +10,9 @@ public class VariasFunciones {
 
   public static boolean esCapicua(int n) {
     return esCapicua((int)n);
-  }*/
+  }
   
-  //esPrimo
+  //2.esPrimo
   
   public static boolean esPrimo(long n) {
     if (n < 2) {
@@ -30,5 +30,7 @@ public class VariasFunciones {
   public static boolean esPrimo(int n) {
     return esPrimo((long) n);
   }
+  
+  //
   
 }
