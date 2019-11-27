@@ -66,8 +66,8 @@ public class VariasFunciones {
     } else {
       int n = 0;
       while (x > 0) {
-        x = x / 10; // se le quita un dígito a x
-        n++; // incrementa la cuenta de dígitos
+        x = x / 10; 
+        n++; 
       }
       return n;
     }
@@ -96,11 +96,12 @@ public class VariasFunciones {
     public static int voltea(int x) {
     return (int)voltea((long)x);
   }
+  
   //7. digitoN: Devuelve el dígito que está en la posición n de un número entero. Se empieza contando por el 0 y de izquierda a derecha
   public static int digitoN(long x, int n) {
     x = voltea(x);
 
-    while (n-- > 0) {
+    while (n-- > 1) {
       x = x / 10;
     }
 
@@ -109,5 +110,8 @@ public class VariasFunciones {
 
   public static int digitoN(int x, int n) {
     return digitoN((long)x, n);
+  
+  //8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
+  
   }
 }

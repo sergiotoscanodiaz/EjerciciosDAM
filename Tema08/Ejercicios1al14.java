@@ -27,6 +27,6 @@ public class Ejercicios1al14 {
      System.out.println("El 56 volteado es " + matematicas.VariasFunciones.voltea(56));
     
     //7.digitoN
-     System.out.println("En la posición 4 del 3452 está el " + matematicas.VariasFunciones.digitoN(3452, 4));
+     System.out.println("En la posición 2 del 3452 está el " + matematicas.VariasFunciones.digitoN(3452, 2));
   }
 }
