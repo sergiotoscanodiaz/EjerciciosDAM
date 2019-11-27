@@ -2,8 +2,7 @@ package matematicas;
 
 public class VariasFunciones {
 
-  //1.esCapicua: Devuelve verdadero si el número que se pasa como parámetro es capicúa y falso en caso contrario.
- 
+  //1.esCapicua: Devuelve verdadero si el número que se pasa como parámetro es capicúa y falso en caso contrario. 
   public static boolean esCapicua(long n) {
     return n == voltea(n);
   }
@@ -12,8 +11,7 @@ public class VariasFunciones {
     return esCapicua((long)n);
   }
   
-  //2.esPrimo: Devuelve verdadero si el número que se pasa como parámetro es primo y falso en caso contrario.
-  
+  //2.esPrimo: Devuelve verdadero si el número que se pasa como parámetro es primo y falso en caso contrario.  
   public static boolean esPrimo(long n) {
     if (n < 2) {
       return false;
@@ -31,16 +29,14 @@ public class VariasFunciones {
     return esPrimo((long) n);
   }
   
-  //3.siguientePrimo: Devuelve el menor primo que es mayor al número que se pasa como parámetro.
-  
+  //3.siguientePrimo: Devuelve el menor primo que es mayor al número que se pasa como parámetro.  
   public static int siguientePrimo(int x) {
     while (!esPrimo(++x)) {};
 
     return x;
   }
   
-  //6.Voltea: Le da la vuelta a un número.
-  
+  //6.Voltea: Le da la vuelta a un número.  
   public static long voltea(long x) {
     if (x < 0) {
       return -voltea(-x);
