@@ -47,7 +47,6 @@ public class Ejercicios1al14 {
     //13.trozoDeNumero
     System.out.println("Al 123456 le cojo el trozo que va de la posición 0 a la 3: " + matematicas.VariasFunciones.trozoDeNumero(123456, 0, 3));
 
-
     //14.juntaNumeros
     System.out.println("Juntando el 56 y el 80 da el " + matematicas.VariasFunciones.juntaNumeros(56, 80));
 
