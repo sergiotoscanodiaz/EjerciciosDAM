@@ -97,7 +97,7 @@ public class VariasFunciones {
     return (int)voltea((long)x);
   }
   
-  //7. digitoN: Devuelve el dígito que está en la posición n de un número entero. Se empieza contando por el 0 y de izquierda a derecha
+  //7.digitoN: Devuelve el dígito que está en la posición n de un número entero. Se empieza contando por el 0 y de izquierda a derecha
   public static int digitoN(long x, int n) {
     x = voltea(x);
 
@@ -112,7 +112,7 @@ public class VariasFunciones {
     return digitoN((long)x, n);
   }
   
-  //8. posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
+  //8.posicionDeDigito: Da la posición de la primera ocurrencia de un dígito dentro de un número entero. Si no se encuentra, devuelve -1.
   public static int posicionDigito(long x, int d) {
     int i;
 
@@ -125,7 +125,7 @@ public class VariasFunciones {
     }
   }
   
-  //9. quitaPorDetras: Le quita a un número n dígitos por detrás (por la derecha).
+  //9.quitaPorDetras: Le quita a un número n dígitos por detrás (por la derecha).
   public static long quitaPorDetras(long x, int n) {
     return x / (long)potencia(10, n);
   }
@@ -135,5 +135,57 @@ public class VariasFunciones {
     return (int)quitaPorDetras((long) x, n);
   }
   
+  //10.quitaPorDelante: Le quita a un número n dígitos por delante (por la izquierda).
+  public static long quitaPorDelante(long x, int n) {
+    x = pegaPorDetras(x, 1); 
+    x = voltea(quitaPorDetras(voltea(x), n));
+    x = quitaPorDetras(x, 1);
+    return x;
+  }
 
+  public static int quitaPorDelante(int x, int n) {
+    return (int)quitaPorDelante((long)x, n);
+  }
+  
+  //11.pegaPorDetras: Añade un dígito a un número por detrás.
+  public static long pegaPorDetras(long x, int d) {
+    return juntaNumeros(x, d);
+  }
+
+  public static int pegaPorDetras(int x, int d) {
+    return (int)pegaPorDetras((long)x, d);
+  }
+  
+  //12.pegaPorDelante: Añade un dígito a un número por delante.
+  public static long pegaPorDelante(long x, int d) {
+    return juntaNumeros(d, x);
+  }
+
+  public static int pegaPorDelante(int x, int d) {
+    return (int)pegaPorDelante((long)x, d);
+  }
+  
+  //13. trozoDeNumero: Toma como parámetros las posiciones inicial y final dentro de un número y devuelve el trozo correspondiente.
+  public static long trozoDeNumero(long x, int inicio, int fin) {
+    int longitud = digitos(x);
+    x = quitaPorDelante(x, inicio);
+    x = quitaPorDetras(x, longitud - fin - 1);
+    return x;
+  }
+
+  public static int trozoDeNumero(int x, int inicio, int fin) {
+    return (int)trozoDeNumero((long)x, inicio, fin);  
+  }
+  
+  //14.juntaNumeros: Pega dos números para formar uno.
+  public static long juntaNumeros(long x, long y) {
+    return (long)(x * potencia(10, digitos(y))) + y;
+  }
+
+  public static int juntaNumeros(int x, int y) {
+    return (int)(juntaNumeros((long)x, (long)y));
+  }
 }
+
+  
+
