@@ -7,7 +7,7 @@ public class Ejercicio17 {
    * Programa que pasa de 
    * binario a decimal
    * 
-   * */
+   **/
 
   public static void main(String[] args) {
     

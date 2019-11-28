@@ -186,6 +186,3 @@ public class VariasFunciones {
     return (int)(juntaNumeros((long)x, (long)y));
   }
 }
-
-  
-
