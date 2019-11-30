@@ -9,20 +9,33 @@ public class Ejercicio18 {
    * 
    * */
 
+ 
   public static void main(String[] args) {
     
-    long decimal = 0;
+    System.out.print("Introduzca un para pasarlo a binario: ");
+    int decimal = Integer.parseInt(System.console().readLine());
     
-    System.out.print("Introduzca un número decimal: ");
-    long binario = Long.parseLong(System.console().readLine());
+    System.out.println(decimal + " en decimal es " + decimalABinario(decimal) + " en binario.");
     
-    int bits = matematicas.VariasFunciones.digitos(binario);
-    
-    for(int i = 0; i < bits; i++) {
-      binario += matematicas.VariasFunciones.potencia(2, i) / matematicas.VariasFunciones.digitoN(binario, bits) ;
+  } 
+  public static long decimalABinario(int decimal) {
+  
+    if (decimal == 0) {
+      return 0;
     }
+      
+    long binario = 1;
     
-    System.out.println(decimal + " en decimal es " + binario + " en binario.");
+    while (decimal > 1) {
+      binario = matematicas.VariasFunciones.pegaPorDetras(binario, decimal % 2);
+      decimal = decimal / 2;
+    }
+    binario = matematicas.VariasFunciones.pegaPorDetras(binario, 1);
+    binario = matematicas.VariasFunciones.voltea(binario);
+    binario = matematicas.VariasFunciones.quitaPorDetras(binario, 1);
+    
+    return binario;
   }
 }
+
 
