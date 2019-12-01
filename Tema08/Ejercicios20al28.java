@@ -14,7 +14,7 @@ public class Ejercicios20al28 {
     if (array.Array.estaEnArrayInt(a, 20)) {
       System.out.println("El 20 está en el array.");
     } else {
-      System.out.println("El 20 no está en el array.");
+      System.out.println("El 20 no está en el array generado.");
     }
       
     System.out.println("El 20 está en la posición " + array.Array.posicionEnArrayInt(a, 20));
