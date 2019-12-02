@@ -19,13 +19,13 @@ public class Ejercicios20al28 {
       
     System.out.println("El 20 está en la posición " + array.Array.posicionEnArrayInt(a, 20));
     
-    System.out.print("Array al revés: ");
+    System.out.print("Array generado al revés: ");
     array.Array.muestraArrayInt(array.Array.volteaArrayInt(a));
     
-    System.out.print("Array rotado 2 posiciones a la derecha: ");
+    System.out.print("Array generado rotado 2 posiciones a la derecha: ");
     array.Array.muestraArrayInt(array.Array.rotaDerechaArrayInt(a, 2));
     
-    System.out.print("Array rotado 2 posiciones a la izquierda: ");
+    System.out.print("Array generado rotado 2 posiciones a la izquierda: ");
     array.Array.muestraArrayInt(array.Array.rotaIzquierdaArrayInt(a, 2));
   }
 }
