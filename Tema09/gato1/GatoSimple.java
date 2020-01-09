@@ -71,21 +71,24 @@ public class GatoSimple {
     }
   }
   
+  
+                 
   GatoSimple apareaCon(GatoSimple pareja) {
     if (this.sexo != pareja.getSexo()) {
-       int probabilidad = (int) (Math.random()*3);
+       int probabilidad = (int)(Math.random()*3);
        
-       if (probabilidad == 2) {
+      if (probabilidad == 2) {
          System.out.println("Tenemos un hijo");
          GatoSimple g03 = new GatoSimple();
          this.sexo = (int)(Math.random()*2) == 0 ? "MACHO" : "HEMBRA";
          System.out.println("Nuestro hijo es: " + g03.getSexo());
          return g03;
-       } else {
+      } else {
          System.out.println("No hemos podido tener un hijo");
          return null;
-       }
-      } else {
+      }
+       
+    } else {
       System.out.println("No podemos aparearnos");  
       return null;
     }                                                
