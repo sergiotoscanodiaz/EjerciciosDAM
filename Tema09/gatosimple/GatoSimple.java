@@ -92,4 +92,15 @@ public class GatoSimple {
       return null;
     }                                                
   }
+  
+  String fichaGatuna() {
+    String resultado = "======================";
+    resultado += "\nSexo: " + this.sexo;
+    resultado += "\nEdad: " + this.edad;
+    resultado += "\n======================";
+    return resultado;
+    
+    
+  }
+  
 }

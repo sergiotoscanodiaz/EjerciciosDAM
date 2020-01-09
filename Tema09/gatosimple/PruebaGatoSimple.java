@@ -13,5 +13,7 @@ public class PruebaGatoSimple {
       System.out.println(nuevoGato.getSexo());
     }
     
+   // System.out.println(g01.fichaGatuna());
+    
   }
 }
