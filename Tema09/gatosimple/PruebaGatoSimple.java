@@ -7,8 +7,11 @@ public class PruebaGatoSimple {
     System.out.println(g01.getSexo());
     System.out.println(g02.getSexo());
                                                         
-    g01.apareaCon(g02);
+    GatoSimple nuevoGato = g01.apareaCon(g02);
     
+    if (nuevoGato != null) {
+      System.out.println(nuevoGato.getSexo());
+    }
     
   }
 }
