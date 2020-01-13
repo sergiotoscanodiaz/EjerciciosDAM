@@ -54,6 +54,12 @@ public class Ejercicio1 {
         logotipo = "bordado";
       }
       
+      System.out.println(""); 
+         
+      System.out.println("EL POLITO BONITO - PRESUPUESTO"); 
+            
+      System.out.println(""); 
+      
       
       System.out.println("Polo en " + pigmento+ ": " + polo);      
       System.out.println("Precio unitario: " + precio + " €");
