@@ -14,7 +14,7 @@ class Caballo {
     this.edad = e;
     this.carrerasGanadas = cg;
   }
-
+  
   public String getNombre() {
     return this.nombre;
   }
