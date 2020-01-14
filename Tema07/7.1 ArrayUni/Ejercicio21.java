@@ -22,7 +22,7 @@ public class Ejercicio21 {
     }
 
     // Muestra el resultado
-    System.out.println("\n\nArray resultado:");
+    System.out.println("\nArray cincuerizado: ");
 
     for (int i = 0; i < 15; i++) {
       System.out.print(n[i] + "  ");
