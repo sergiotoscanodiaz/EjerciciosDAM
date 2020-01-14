@@ -28,6 +28,5 @@ public class Ejercicio21 {
       System.out.print(n[i] + "  ");
     }
   }
-
 }
 
