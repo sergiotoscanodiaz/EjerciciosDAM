@@ -12,8 +12,7 @@ public class Ejercicio13 {
       }
     }
 
-    // Calcula media, mínimo y máximo y muestra los datos
-    
+    // Calcula media, mínimo y máximo y muestra los datos    
     System.out.printf("%64s\n", "MED MIN MAX");
     
     for (int i = 0; i < 4; i++) {
