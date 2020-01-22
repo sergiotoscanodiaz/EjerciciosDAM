@@ -26,7 +26,7 @@ public class Tiempo {
     }
   }
 
-  private int getSegundos() {
+  public int getSegundos() {
     return this.segundos;
   }
   
