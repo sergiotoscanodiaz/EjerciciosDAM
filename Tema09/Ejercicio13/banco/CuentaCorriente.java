@@ -22,7 +22,7 @@ class CuentaCorriente {
 
   @Override
   public String toString() {
-    return "Número de cta: " + numero + " Saldo: " + String.format("%.2f", saldo) + " €";
+    return "Número de cta: " + numero + " Saldo: " + String.format("%.3f", saldo) + " €";
   }
 
   void ingreso(int dinero) {
