@@ -1,5 +1,4 @@
 package puntolinea;
-
 public class PuntoLinea {
 
   public static void main(String[] args) {
