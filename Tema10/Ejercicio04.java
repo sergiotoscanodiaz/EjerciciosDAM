@@ -4,7 +4,7 @@ import java.util.Collections;
 public class Ejercicio04 {
   public static void main(String[] args) {
 
-    ArrayList<String> a = new ArrayList<String>();
+    ArrayList<String> a = new ArrayList</*String*/>();  //<String> se puede quitar
 
     System.out.println("Introduzca 10 palabras: ");
     
