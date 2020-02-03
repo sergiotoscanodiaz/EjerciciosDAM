@@ -1,5 +1,3 @@
-package pruebatiempo;
-
 public class Tiempo {
   
   private int segundos;

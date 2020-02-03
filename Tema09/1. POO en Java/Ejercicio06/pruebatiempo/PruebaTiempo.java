@@ -1,5 +1,3 @@
-package pruebatiempo;
-
 public class PruebaTiempo {
 
   public static void main(String[] args) {
