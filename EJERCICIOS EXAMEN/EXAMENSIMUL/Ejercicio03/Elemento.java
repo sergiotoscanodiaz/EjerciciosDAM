@@ -1,5 +1,7 @@
 package ex18std.Ex18std3;
 
+import java.util.Objects;
+
 public class Elemento {
 
   private String producto;
@@ -34,6 +36,31 @@ public class Elemento {
 
   public void setCantidad(int cantidad) {
     this.cantidad = cantidad;
+  }
+
+  @Override
+  public int hashCode() {
+    int hash = 5;
+    hash = 53 * hash + Objects.hashCode(this.producto);
+    return hash;
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null) {
+      return false;
+    }
+    if (getClass() != obj.getClass()) {
+      return false;
+    }
+    final Elemento other = (Elemento) obj;
+    if (!Objects.equals(this.producto, other.producto)) {
+      return false;
+    }
+    return true;
   }
 
   @Override
