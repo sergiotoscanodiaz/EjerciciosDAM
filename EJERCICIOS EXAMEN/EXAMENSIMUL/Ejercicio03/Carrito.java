@@ -3,12 +3,20 @@ package ex18std.Ex18std3;
 import java.util.ArrayList;
 
 public class Carrito {
-  
+
   ArrayList<Elemento> a = new ArrayList<>();
 
   public void agrega(Elemento e) {
-    
+
+    if (this.a.contains(e)) {
+      int posicion = this.a.indexOf(e);
+      int unidadesExistentes = this.a.get(posicion).getCantidad();
+      int unidadesNuevas = e.getCantidad();
+      this.a.get(posicion).setCantidad(unidadesExistentes + unidadesNuevas);
+
+    } else {
       a.add(e);
+    }
   }
 
   public int numeroDeElementos() {
@@ -33,6 +41,5 @@ public class Carrito {
     }
     return contenido;
   }
-   
-}
 
+}
