@@ -1,5 +1,3 @@
-package Ejercicios;
-
 
 import java.util.Collections;
 import java.io.BufferedReader;
