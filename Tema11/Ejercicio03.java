@@ -1,4 +1,4 @@
-package Ejercicios;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-class S11Ejercicio03 {
+public class Ejercicio03 {
   public static void main(String[] args) {
     if (args.length != 3) {
       System.out.println("Uso del programa: Ejercicio03 FICHERO1 FICHERO2 MEZCLA. Para probar el programa es necesario crear dos ficheros anteriormente");
